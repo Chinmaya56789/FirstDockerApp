@@ -17,7 +17,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the JAR file from the build stage
-COPY --from=build /app/target/FirstDockerApp.jar app.jar
+COPY --from=build /app/target/RestAPI-1.0.jar app.jar
 
 # Expose the application port
 EXPOSE 8080
